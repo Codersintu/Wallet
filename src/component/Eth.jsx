@@ -17,8 +17,9 @@ function Eth() {
   }
 
   return (
-     <div className='w-[1200px] ml-[200px] mr-[200px]'>
-      <div className="flex flex-col ml-28">
+    <div className="w-[100vw] flex justify-center mt-20 ">
+     <div className='w-[1200px] flex flex-col justify-center items-center]'>
+      <div className="flex flex-col">
         <h1 className='text-black font-bold text-5xl mb-2'>Secret Recovery Phrase</h1>
         <p className='text-2xl text-gray-600 mb-4'>Save these words in a safe place.</p>
         <button className='border font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 mb-9 bg-black text-white rounded-xl w-56' onClick={generatewallet}>Genrate Eth Wallet</button>
@@ -47,6 +48,7 @@ function Eth() {
       </div>
       ))}
       </>)}
+    </div>
     </div>
   )
 }
