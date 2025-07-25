@@ -4,6 +4,7 @@ import bs58 from "bs58"
 
 function Sol() {
   const [wallet,setWallet]=useState([])
+   const [showPriv, setShowPriv] = useState(false);
   
   const generatewallet=()=>{
     const keypair=Keypair.generate();
@@ -43,7 +44,17 @@ function Sol() {
         </div>
         <div className="flex flex-col gap-2 mt-7">
           <p className='text-2xl'><b>Private key:</b></p>
-          <p>{wallet.privkey}</p>
+          <div className="flex items-center gap-4">
+          <p className="break-all">
+            {showPriv ? wallet.privkey : "••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••"}
+          </p>
+          <button
+            onClick={() => setShowPriv(!showPriv)}
+            className="bg-gray-300 px-3 py-1 rounded-md text-sm"
+          >
+            {showPriv ? "Hide" : "Show"}
+          </button>
+        </div>
         </div>
           </div>
       </div>
