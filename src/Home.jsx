@@ -9,10 +9,10 @@ function Home() {
             <p className='text-2xl text-gray-500'>Choose a blockchain to get started.</p>
             <div className="flex gap-8">
                 <Link to='/solana'>
-                <button className='border font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 bg-black text-white rounded-xl'>Solana</button>
+                <button className='border hover:bg-gray-800 font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 bg-black text-white rounded-xl'>Solana</button>
                 </Link>
                 <Link to='/eth'>
-                <button className='border font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 bg-black text-white rounded-xl'>Ethereum</button>
+                <button className='border hover:bg-gray-800 font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 bg-black text-white rounded-xl'>Ethereum</button>
               </Link>
             </div>
         </div>

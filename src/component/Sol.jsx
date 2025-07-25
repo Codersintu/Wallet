@@ -22,7 +22,7 @@ function Sol() {
       <div className="flex flex-col ml-28">
         <h1 className='text-black font-bold text-5xl mb-2'>Secret Recovery Phrase</h1>
         <p className='text-2xl text-gray-600 mb-4'>Save these words in a safe place.</p>
-        <button className='border font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 mb-9 bg-black text-white rounded-xl w-56' onClick={generatewallet}>Genrate Wallet</button>
+        <button className='border font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 mb-9 bg-black text-white rounded-xl w-56 hover:bg-gray-800' onClick={generatewallet}>Genrate Wallet</button>
       </div>
 
 {wallet && (
