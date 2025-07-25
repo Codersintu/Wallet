@@ -3,7 +3,7 @@ import './App.css'
 import Home from './Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Eth from './component/Eth'
-import Wallet from './component/wallet'
+import Sol from './component/Sol'
 
 function App() {
   
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
     <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route exact path="/wallet" element={<Wallet/>} />
+        <Route exact path="/solana" element={<Sol/>} />
               <Route exact path="/eth" element={<Eth/>} />
     </Routes>
     </BrowserRouter>

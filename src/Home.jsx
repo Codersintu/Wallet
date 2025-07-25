@@ -8,7 +8,7 @@ function Home() {
             <h1 className='text-black font-bold text-5xl'>Chintu supports multiple blockchains</h1>
             <p className='text-2xl text-gray-500'>Choose a blockchain to get started.</p>
             <div className="flex gap-8">
-                <Link to='/wallet'>
+                <Link to='/solana'>
                 <button className='border font-bold cursor-pointer pt-3 pb-3 pr-10 pl-10 bg-black text-white rounded-xl'>Solana</button>
                 </Link>
                 <Link to='/eth'>

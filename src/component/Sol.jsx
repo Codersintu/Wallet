@@ -2,7 +2,7 @@ import { Keypair } from '@solana/web3.js'
 import { useState } from 'react'
 import bs58 from "bs58"
 
-function Wallet() {
+function Sol() {
   const [wallet,setWallet]=useState([])
   
   const generatewallet=()=>{
@@ -52,4 +52,4 @@ function Wallet() {
   )
 }
 
-export default Wallet
+export default Sol;
