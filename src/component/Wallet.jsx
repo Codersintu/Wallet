@@ -1,5 +1,5 @@
 import { Keypair } from '@solana/web3.js'
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import bs58 from "bs58"
 
 function Wallet() {
